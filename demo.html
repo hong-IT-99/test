@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+</head>
+<body>
+    <div id="ab">
+        <h1>
+         <test></test>
+        </h1>
+    </div>
+</body>
+<script>
+
+Vue.component ('test', {
+        data: function(){
+            return{
+                demo2 : 'ABCXYZ'
+            }
+        },
+        template: '<h1>{{demo2}}</h1>' 
+})
+new Vue({
+     el: '#ab'
+})
+
+</script>
+</html>
